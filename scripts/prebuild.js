@@ -28,7 +28,7 @@ function emptyDir(dir) {
     fs.mkdirSync(dir)
   }
 }
-// `passList: Array<string>`를 제외한 모든 public 파일을 buidl/로 복사
+// `passList: Array<string>`를 제외한 모든 public 파일을 build/로 복사
 function copyPublic(passList) {
   fs.readdir(PUBLIC_DIR, (_, files) => {
     files.forEach((item) => {
